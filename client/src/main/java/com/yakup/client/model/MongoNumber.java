@@ -1,4 +1,4 @@
-package com.yakup.client;
+package com.yakup.client.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;

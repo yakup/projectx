@@ -1,12 +1,11 @@
 package com.yakup.client.controller;
 
-import com.yakup.client.AssignmentErrors;
-import com.yakup.client.MongoNumber;
-import com.yakup.client.NumberRepository;
+import com.yakup.client.common.AssignmentErrors;
+import com.yakup.client.model.MongoNumber;
+import com.yakup.client.repository.NumberRepository;
 import com.yakup.client.repository.CustomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
-import org.springframework.data.repository.query.Param;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/number")
 @EnableMongoRepositories
-public class DocumentController {
+public class NumberController {
     private static SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     @Autowired
     private NumberRepository numberRepository;

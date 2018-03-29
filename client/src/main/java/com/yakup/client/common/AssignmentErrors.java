@@ -1,4 +1,4 @@
-package com.yakup.client;
+package com.yakup.client.common;
 
 public enum AssignmentErrors {
     NUMBER_ALREADY_EXISTS(1, "Number already saved"),

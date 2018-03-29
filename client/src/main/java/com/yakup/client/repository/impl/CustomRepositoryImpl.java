@@ -1,6 +1,7 @@
-package com.yakup.client.repository;
+package com.yakup.client.repository.impl;
 
-import com.yakup.client.MongoNumber;
+import com.yakup.client.model.MongoNumber;
+import com.yakup.client.repository.CustomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
